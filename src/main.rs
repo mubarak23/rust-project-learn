@@ -1,7 +1,7 @@
 
 use std::collections::HashMap;
 
-
+// Accept vector of type i32 and return result of type f64
 fn calculate_median( numbers: &Vec<i32>) -> f64 {
     let mut sort_numbers = numbers.clone();
     
@@ -18,6 +18,8 @@ fn calculate_median( numbers: &Vec<i32>) -> f64 {
     }
 }
 
+
+// Accept vector of type i32 and return result of type i32
 fn calculate_mode (numbers: &Vec<i32>) -> i32 {
     let mut count_map = HashMap::new();
 
@@ -38,6 +40,9 @@ fn calculate_mode (numbers: &Vec<i32>) -> i32 {
 }
 
 fn main() {
+
+    // Vectors allow you to store more than one value in a single data structure 
+    // we can only store value of the same type in vector 
     let numbers = vec![1, 3, 2, 2, 4, 5, 3, 2, 2, 6, 7, 8, 9];
 
     let median = calculate_median(&numbers);
